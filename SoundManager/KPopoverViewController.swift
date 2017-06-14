@@ -21,10 +21,11 @@ class KPopoverViewController: NSViewController {
     
     @IBAction func volumeChangedHandle(_ sender: Any) {
         print("volume changed")
-        self.changeVolume(0.2)
+        self.changeVolume(0.6)
     }
     
     func changeVolume(_ volumeValue: CGFloat = 0.5) {
+        // 获取输出设备
         var defaultOutputDeviceID = AudioDeviceID(0)
         var defaultOutputDeviceIDSize = UInt32(MemoryLayout.size(ofValue: defaultOutputDeviceID))
         
