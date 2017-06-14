@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7DEB62991EF17CEA0026EBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */; };
-		7DEB629B1EF17CEA0026EBE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB629A1EF17CEA0026EBE9 /* ViewController.swift */; };
 		7DEB629D1EF17CEA0026EBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */; };
 		7DEB62AC1EF17CEA0026EBE9 /* SoundManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62AB1EF17CEA0026EBE9 /* SoundManagerTests.swift */; };
 		7DEB62B71EF17CEA0026EBE9 /* SoundManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62B61EF17CEA0026EBE9 /* SoundManagerUITests.swift */; };
@@ -16,6 +15,7 @@
 		7DEB62C81EF181920026EBE9 /* KPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62C61EF181920026EBE9 /* KPopoverViewController.swift */; };
 		7DEB62C91EF181920026EBE9 /* KPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */; };
 		7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62CA1EF1874D0026EBE9 /* main.swift */; };
+		7DEB62CC1EF18ED80026EBE9 /* KPopoverViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		7DEB62951EF17CEA0026EBE9 /* SoundManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DEB629A1EF17CEA0026EBE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DEB62A11EF17CEA0026EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DEB62A21EF17CEA0026EBE9 /* SoundManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundManager.entitlements; sourceTree = "<group>"; };
@@ -103,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */,
-				7DEB629A1EF17CEA0026EBE9 /* ViewController.swift */,
 				7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */,
 				7DEB62C41EF17D790026EBE9 /* iTunesArtwork.png */,
 				7DEB62A11EF17CEA0026EBE9 /* Info.plist */,
@@ -264,8 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DEB62CC1EF18ED80026EBE9 /* KPopoverViewController.xib in Sources */,
 				7DEB62C81EF181920026EBE9 /* KPopoverViewController.swift in Sources */,
-				7DEB629B1EF17CEA0026EBE9 /* ViewController.swift in Sources */,
 				7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */,
 				7DEB62991EF17CEA0026EBE9 /* AppDelegate.swift in Sources */,
 			);
@@ -516,6 +514,7 @@
 				7DEB62BD1EF17CEA0026EBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DEB62BE1EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +523,7 @@
 				7DEB62C01EF17CEA0026EBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DEB62C11EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +532,7 @@
 				7DEB62C31EF17CEA0026EBE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
