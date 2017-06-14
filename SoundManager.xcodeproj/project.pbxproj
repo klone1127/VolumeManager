@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7DEB62991EF17CEA0026EBE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */; };
+		7DEB629B1EF17CEA0026EBE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB629A1EF17CEA0026EBE9 /* ViewController.swift */; };
+		7DEB629D1EF17CEA0026EBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */; };
+		7DEB62AC1EF17CEA0026EBE9 /* SoundManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62AB1EF17CEA0026EBE9 /* SoundManagerTests.swift */; };
+		7DEB62B71EF17CEA0026EBE9 /* SoundManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62B61EF17CEA0026EBE9 /* SoundManagerUITests.swift */; };
+		7DEB62C51EF17D790026EBE9 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB62C41EF17D790026EBE9 /* iTunesArtwork.png */; };
+		7DEB62C81EF181920026EBE9 /* KPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62C61EF181920026EBE9 /* KPopoverViewController.swift */; };
+		7DEB62C91EF181920026EBE9 /* KPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */; };
+		7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62CA1EF1874D0026EBE9 /* main.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7DEB62A81EF17CEA0026EBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DEB628D1EF17CEA0026EBE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEB62941EF17CEA0026EBE9;
+			remoteInfo = SoundManager;
+		};
+		7DEB62B31EF17CEA0026EBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7DEB628D1EF17CEA0026EBE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7DEB62941EF17CEA0026EBE9;
+			remoteInfo = SoundManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7DEB62951EF17CEA0026EBE9 /* SoundManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DEB629A1EF17CEA0026EBE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DEB62A11EF17CEA0026EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEB62A21EF17CEA0026EBE9 /* SoundManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SoundManager.entitlements; sourceTree = "<group>"; };
+		7DEB62A71EF17CEA0026EBE9 /* SoundManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEB62AB1EF17CEA0026EBE9 /* SoundManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManagerTests.swift; sourceTree = "<group>"; };
+		7DEB62AD1EF17CEA0026EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEB62B21EF17CEA0026EBE9 /* SoundManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DEB62B61EF17CEA0026EBE9 /* SoundManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManagerUITests.swift; sourceTree = "<group>"; };
+		7DEB62B81EF17CEA0026EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEB62C41EF17D790026EBE9 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "../../../../Desktop/icon/apple-Icon/Assets/App Icon/iTunesArtwork.png"; sourceTree = "<group>"; };
+		7DEB62C61EF181920026EBE9 /* KPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPopoverViewController.swift; sourceTree = "<group>"; };
+		7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KPopoverViewController.xib; sourceTree = "<group>"; };
+		7DEB62CA1EF1874D0026EBE9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DEB62921EF17CEA0026EBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEB62A41EF17CEA0026EBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEB62AF1EF17CEA0026EBE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DEB628C1EF17CEA0026EBE9 = {
+			isa = PBXGroup;
+			children = (
+				7DEB62971EF17CEA0026EBE9 /* SoundManager */,
+				7DEB62AA1EF17CEA0026EBE9 /* SoundManagerTests */,
+				7DEB62B51EF17CEA0026EBE9 /* SoundManagerUITests */,
+				7DEB62961EF17CEA0026EBE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7DEB62961EF17CEA0026EBE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DEB62951EF17CEA0026EBE9 /* SoundManager.app */,
+				7DEB62A71EF17CEA0026EBE9 /* SoundManagerTests.xctest */,
+				7DEB62B21EF17CEA0026EBE9 /* SoundManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DEB62971EF17CEA0026EBE9 /* SoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */,
+				7DEB629A1EF17CEA0026EBE9 /* ViewController.swift */,
+				7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */,
+				7DEB62C41EF17D790026EBE9 /* iTunesArtwork.png */,
+				7DEB62A11EF17CEA0026EBE9 /* Info.plist */,
+				7DEB62A21EF17CEA0026EBE9 /* SoundManager.entitlements */,
+				7DEB62C61EF181920026EBE9 /* KPopoverViewController.swift */,
+				7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */,
+				7DEB62CA1EF1874D0026EBE9 /* main.swift */,
+			);
+			path = SoundManager;
+			sourceTree = "<group>";
+		};
+		7DEB62AA1EF17CEA0026EBE9 /* SoundManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DEB62AB1EF17CEA0026EBE9 /* SoundManagerTests.swift */,
+				7DEB62AD1EF17CEA0026EBE9 /* Info.plist */,
+			);
+			path = SoundManagerTests;
+			sourceTree = "<group>";
+		};
+		7DEB62B51EF17CEA0026EBE9 /* SoundManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7DEB62B61EF17CEA0026EBE9 /* SoundManagerUITests.swift */,
+				7DEB62B81EF17CEA0026EBE9 /* Info.plist */,
+			);
+			path = SoundManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DEB62941EF17CEA0026EBE9 /* SoundManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEB62BB1EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManager" */;
+			buildPhases = (
+				7DEB62911EF17CEA0026EBE9 /* Sources */,
+				7DEB62921EF17CEA0026EBE9 /* Frameworks */,
+				7DEB62931EF17CEA0026EBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundManager;
+			productName = SoundManager;
+			productReference = 7DEB62951EF17CEA0026EBE9 /* SoundManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7DEB62A61EF17CEA0026EBE9 /* SoundManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEB62BE1EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManagerTests" */;
+			buildPhases = (
+				7DEB62A31EF17CEA0026EBE9 /* Sources */,
+				7DEB62A41EF17CEA0026EBE9 /* Frameworks */,
+				7DEB62A51EF17CEA0026EBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEB62A91EF17CEA0026EBE9 /* PBXTargetDependency */,
+			);
+			name = SoundManagerTests;
+			productName = SoundManagerTests;
+			productReference = 7DEB62A71EF17CEA0026EBE9 /* SoundManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7DEB62B11EF17CEA0026EBE9 /* SoundManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DEB62C11EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManagerUITests" */;
+			buildPhases = (
+				7DEB62AE1EF17CEA0026EBE9 /* Sources */,
+				7DEB62AF1EF17CEA0026EBE9 /* Frameworks */,
+				7DEB62B01EF17CEA0026EBE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7DEB62B41EF17CEA0026EBE9 /* PBXTargetDependency */,
+			);
+			name = SoundManagerUITests;
+			productName = SoundManagerUITests;
+			productReference = 7DEB62B21EF17CEA0026EBE9 /* SoundManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DEB628D1EF17CEA0026EBE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = klone;
+				TargetAttributes = {
+					7DEB62941EF17CEA0026EBE9 = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					7DEB62A61EF17CEA0026EBE9 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 7DEB62941EF17CEA0026EBE9;
+					};
+					7DEB62B11EF17CEA0026EBE9 = {
+						CreatedOnToolsVersion = 9.0;
+						TestTargetID = 7DEB62941EF17CEA0026EBE9;
+					};
+				};
+			};
+			buildConfigurationList = 7DEB62901EF17CEA0026EBE9 /* Build configuration list for PBXProject "SoundManager" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DEB628C1EF17CEA0026EBE9;
+			productRefGroup = 7DEB62961EF17CEA0026EBE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DEB62941EF17CEA0026EBE9 /* SoundManager */,
+				7DEB62A61EF17CEA0026EBE9 /* SoundManagerTests */,
+				7DEB62B11EF17CEA0026EBE9 /* SoundManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DEB62931EF17CEA0026EBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEB62C91EF181920026EBE9 /* KPopoverViewController.xib in Resources */,
+				7DEB62C51EF17D790026EBE9 /* iTunesArtwork.png in Resources */,
+				7DEB629D1EF17CEA0026EBE9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEB62A51EF17CEA0026EBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEB62B01EF17CEA0026EBE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DEB62911EF17CEA0026EBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEB62C81EF181920026EBE9 /* KPopoverViewController.swift in Sources */,
+				7DEB629B1EF17CEA0026EBE9 /* ViewController.swift in Sources */,
+				7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */,
+				7DEB62991EF17CEA0026EBE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEB62A31EF17CEA0026EBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEB62AC1EF17CEA0026EBE9 /* SoundManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DEB62AE1EF17CEA0026EBE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DEB62B71EF17CEA0026EBE9 /* SoundManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7DEB62A91EF17CEA0026EBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEB62941EF17CEA0026EBE9 /* SoundManager */;
+			targetProxy = 7DEB62A81EF17CEA0026EBE9 /* PBXContainerItemProxy */;
+		};
+		7DEB62B41EF17CEA0026EBE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7DEB62941EF17CEA0026EBE9 /* SoundManager */;
+			targetProxy = 7DEB62B31EF17CEA0026EBE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7DEB62B91EF17CEA0026EBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7DEB62BA1EF17CEA0026EBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		7DEB62BC1EF17CEA0026EBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundManager/SoundManager.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TBSUACPT52;
+				INFOPLIST_FILE = SoundManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		7DEB62BD1EF17CEA0026EBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SoundManager/SoundManager.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TBSUACPT52;
+				INFOPLIST_FILE = SoundManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		7DEB62BF1EF17CEA0026EBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TBSUACPT52;
+				INFOPLIST_FILE = SoundManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundManager.app/Contents/MacOS/SoundManager";
+			};
+			name = Debug;
+		};
+		7DEB62C01EF17CEA0026EBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TBSUACPT52;
+				INFOPLIST_FILE = SoundManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundManager.app/Contents/MacOS/SoundManager";
+			};
+			name = Release;
+		};
+		7DEB62C21EF17CEA0026EBE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TBSUACPT52;
+				INFOPLIST_FILE = SoundManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = SoundManager;
+			};
+			name = Debug;
+		};
+		7DEB62C31EF17CEA0026EBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TBSUACPT52;
+				INFOPLIST_FILE = SoundManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = SoundManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DEB62901EF17CEA0026EBE9 /* Build configuration list for PBXProject "SoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEB62B91EF17CEA0026EBE9 /* Debug */,
+				7DEB62BA1EF17CEA0026EBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DEB62BB1EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEB62BC1EF17CEA0026EBE9 /* Debug */,
+				7DEB62BD1EF17CEA0026EBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7DEB62BE1EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEB62BF1EF17CEA0026EBE9 /* Debug */,
+				7DEB62C01EF17CEA0026EBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7DEB62C11EF17CEA0026EBE9 /* Build configuration list for PBXNativeTarget "SoundManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DEB62C21EF17CEA0026EBE9 /* Debug */,
+				7DEB62C31EF17CEA0026EBE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DEB628D1EF17CEA0026EBE9 /* Project object */;
+}
