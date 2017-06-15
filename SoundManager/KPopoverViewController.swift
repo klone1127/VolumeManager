@@ -9,28 +9,31 @@
 import Cocoa
 
 let border: CGFloat = 2.0
+let denominator: CGFloat = 100.0
 
 class KPopoverViewController: NSViewController {
     
     var progrssView: NSView!
     var container: NSView!
+    var defaultVolume: CGFloat = CGFloat(NSSound.systemVolume()) * denominator
     
     @IBOutlet weak var touchButton: NSButton!
-    var volumeValue: CGFloat = 50.0       // 默认值为当前音量
+    var volumeValue: CGFloat!       // 默认值为当前音量
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        self.volumeValue = self.defaultVolume
+        
         self.containerView()
         Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(progressViewChanges), userInfo: nil, repeats: true)
         
     }
     
     @IBAction func volumeChangedHandle(_ sender: Any) {
-        print("volume changed")
-        VolumeManager().changeVolume(0.2)
+        
         self.volumeValue = self.volumeValue + 1
         self.progressHeight(height: self.volumeValue)
+        VolumeManager().changeVolume(self.volumeValue / denominator)
     }
     
     func containerView() {
@@ -41,7 +44,7 @@ class KPopoverViewController: NSViewController {
         self.view.addSubview(container)
         
         let w: CGFloat = 40.0
-        let h: CGFloat = 100.0
+        let h: CGFloat = 100
         container.frame = NSRect(x: self.view.bounds.width / 2 - w / 2.0, y: self.view.bounds.size.height / 2.0 - h / 2.0, width: w, height: h)
         
         self.loadProgressView(superView: container)
@@ -50,7 +53,7 @@ class KPopoverViewController: NSViewController {
     
     func loadProgressView(_ superViewBorder: CGFloat = 2.0, superView: NSView) {
         // MARK: height 应该为当前的音量, 最大为 100
-        let h: CGFloat = 20.0
+        let h: CGFloat = self.defaultVolume
         self.progrssView = NSView()
         self.progressHeight(height: h)
         self.progrssView.wantsLayer = true
@@ -66,6 +69,7 @@ class KPopoverViewController: NSViewController {
     
     func progressHeight(height: CGFloat) {
         self.progrssView.frame = CGRect(x: border, y: border, width: self.container.bounds.size.width - 2 * border, height: height)
+        VolumeManager().changeVolume(self.volumeValue / denominator)
     }
     
 }

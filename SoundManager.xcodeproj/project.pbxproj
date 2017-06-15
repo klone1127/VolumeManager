@@ -16,6 +16,7 @@
 		7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62CA1EF1874D0026EBE9 /* main.swift */; };
 		7DEB62CC1EF18ED80026EBE9 /* KPopoverViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */; };
 		8B3122191EF236FC00E466D5 /* VolumeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3122181EF236FC00E466D5 /* VolumeManager.swift */; };
+		8B31221F1EF278F100E466D5 /* ISSoundAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B31221E1EF278F100E466D5 /* ISSoundAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		7DEB62CA1EF1874D0026EBE9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8B31215F1EF20CAD00E466D5 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		8B3122181EF236FC00E466D5 /* VolumeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeManager.swift; sourceTree = "<group>"; };
+		8B31221C1EF278EF00E466D5 /* SoundManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SoundManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B31221D1EF278F100E466D5 /* ISSoundAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISSoundAdditions.h; sourceTree = "<group>"; };
+		8B31221E1EF278F100E466D5 /* ISSoundAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISSoundAdditions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		7DEB62971EF17CEA0026EBE9 /* SoundManager */ = {
 			isa = PBXGroup;
 			children = (
+				8B3122201EF279B500E466D5 /* ISSoundAdditions */,
 				7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */,
 				7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */,
 				7DEB62A11EF17CEA0026EBE9 /* Info.plist */,
@@ -112,6 +117,7 @@
 				7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */,
 				7DEB62CA1EF1874D0026EBE9 /* main.swift */,
 				8B3122181EF236FC00E466D5 /* VolumeManager.swift */,
+				8B31221C1EF278EF00E466D5 /* SoundManager-Bridging-Header.h */,
 			);
 			path = SoundManager;
 			sourceTree = "<group>";
@@ -132,6 +138,15 @@
 				7DEB62B81EF17CEA0026EBE9 /* Info.plist */,
 			);
 			path = SoundManagerUITests;
+			sourceTree = "<group>";
+		};
+		8B3122201EF279B500E466D5 /* ISSoundAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				8B31221D1EF278F100E466D5 /* ISSoundAdditions.h */,
+				8B31221E1EF278F100E466D5 /* ISSoundAdditions.m */,
+			);
+			path = ISSoundAdditions;
 			sourceTree = "<group>";
 		};
 		E92A8E8022E9CECDE0B8C23A /* Frameworks */ = {
@@ -209,6 +224,7 @@
 				TargetAttributes = {
 					7DEB62941EF17CEA0026EBE9 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					7DEB62A61EF17CEA0026EBE9 = {
 						CreatedOnToolsVersion = 9.0;
@@ -273,6 +289,7 @@
 			files = (
 				7DEB62CC1EF18ED80026EBE9 /* KPopoverViewController.xib in Sources */,
 				7DEB62C81EF181920026EBE9 /* KPopoverViewController.swift in Sources */,
+				8B31221F1EF278F100E466D5 /* ISSoundAdditions.m in Sources */,
 				7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */,
 				7DEB62991EF17CEA0026EBE9 /* AppDelegate.swift in Sources */,
 				8B3122191EF236FC00E466D5 /* VolumeManager.swift in Sources */,
@@ -417,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SoundManager/SoundManager.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TBSUACPT52;
@@ -424,6 +442,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundManager/SoundManager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -432,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SoundManager/SoundManager.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = TBSUACPT52;
@@ -439,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.klone.SoundManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SoundManager/SoundManager-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
