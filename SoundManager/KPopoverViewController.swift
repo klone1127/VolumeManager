@@ -17,6 +17,7 @@ class KPopoverViewController: NSViewController {
     var container: NSView!
     var defaultVolume: CGFloat = CGFloat(NSSound.systemVolume()) * denominator
     var timer: Timer!
+    var volumeText: NSTextField!
     
     @IBOutlet weak var touchButton: NSButton!
     var volumeValue: CGFloat!       // 默认值为当前音量
@@ -65,6 +66,18 @@ class KPopoverViewController: NSViewController {
         container.frame = NSRect(x: self.view.bounds.width / 2 - w / 2.0, y: self.view.bounds.size.height / 2.0 - h / 2.0, width: w, height: h)
         
         self.loadProgressView(superView: container)
+        self.showVolumeValue(constraints: self.container)
+    }
+    
+    func showVolumeValue(constraints: NSView) {
+        
+        self.volumeText = NSTextField(labelWithString: "\(self.defaultVolume)")
+        self.view.addSubview(self.volumeText)
+        self.volumeText.isEditable = false
+        self.volumeText.frame = CGRect(x: constraints.frame.origin.x, y: constraints.frame.origin.y - 10, width: constraints.frame.size.width, height: 10)
+        self.volumeText.font = NSFont.systemFont(ofSize: 10.0)
+        self.volumeText.textColor = .white
+        self.volumeText.backgroundColor = .black
         
     }
     
@@ -83,6 +96,7 @@ class KPopoverViewController: NSViewController {
             self.volumeValue = self.volumeValue - 1
             self.progressHeight(height: self.volumeValue)
         }
+        self.volumeText.placeholderString = "\(self.volumeValue)"
     }
     
     func progressHeight(height: CGFloat) {
