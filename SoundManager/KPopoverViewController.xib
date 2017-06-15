@@ -8,7 +8,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="KPopoverViewController" customModule="SoundManager" customModuleProvider="target">
             <connections>
-                <outlet property="touchButton" destination="BXU-iv-kNh" id="nFU-zo-WjQ"/>
+                <outlet property="touchButton" destination="s1a-Vc-N6T" id="lhZ-Z5-PdW"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -18,18 +18,30 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXU-iv-kNh">
-                    <rect key="frame" x="207" y="217" width="67" height="32"/>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s1a-Vc-N6T">
+                    <rect key="frame" x="200" y="224" width="81" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="push" title="调节" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7Ob-7u-kXj">
+                    <buttonCell key="cell" type="push" title="调节" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QAO-EZ-DzQ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
-                        <action selector="volumeChangedHandle:" target="-2" id="JoS-yT-LdQ"/>
+                        <action selector="volumeChangedHandle:" target="-2" id="nCc-Vv-1hC"/>
+                    </connections>
+                </button>
+                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c96-VZ-kOh">
+                    <rect key="frame" x="202" y="18" width="76" height="18"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="check" title="是否开启" bezelStyle="regularSquare" imagePosition="left" inset="2" id="liA-NA-dlZ">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkClicked:" target="-2" id="n0k-UT-toM"/>
                     </connections>
                 </button>
             </subviews>
+            <point key="canvasLocation" x="-50" y="64"/>
         </customView>
     </objects>
 </document>

@@ -16,6 +16,7 @@ class KPopoverViewController: NSViewController {
     var progrssView: NSView!
     var container: NSView!
     var defaultVolume: CGFloat = CGFloat(NSSound.systemVolume()) * denominator
+    var timer: Timer!
     
     @IBOutlet weak var touchButton: NSButton!
     var volumeValue: CGFloat!       // 默认值为当前音量
@@ -25,17 +26,33 @@ class KPopoverViewController: NSViewController {
         self.volumeValue = self.defaultVolume
         
         self.containerView()
-        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(progressViewChanges), userInfo: nil, repeats: true)
+        self.timer = Timer(timeInterval: 0.5,
+                           target: self,
+                           selector: #selector(progressViewChanges),
+                           userInfo: nil,
+                           repeats: true)
+        RunLoop.current.add(self.timer, forMode: .commonModes)
         
     }
     
-    @IBAction func volumeChangedHandle(_ sender: Any) {
+    @IBAction func volumeChangedHandle(_ sender: NSButton) {
         
         self.volumeValue = self.volumeValue + 1
         self.progressHeight(height: self.volumeValue)
         VolumeManager().changeVolume(self.volumeValue / denominator)
+        
     }
     
+    @IBAction func checkClicked(_ sender: Any) {
+        let btn = sender as! NSButton
+        if btn.state == .on {
+            print("开始")
+            self.timerStart()
+        } else {
+            print("暂停")
+            self.timerPause()
+        }
+    }
     func containerView() {
         
         self.container = NSView()
@@ -59,17 +76,26 @@ class KPopoverViewController: NSViewController {
         self.progrssView.wantsLayer = true
         self.progrssView.layer?.backgroundColor = NSColor.red.cgColor
         superView.addSubview(self.progrssView)
-        
     }
     
     @objc func progressViewChanges() {
-        self.volumeValue = self.volumeValue - 1
-        self.progressHeight(height: self.volumeValue)
+        if self.volumeValue > 1 {
+            self.volumeValue = self.volumeValue - 1
+            self.progressHeight(height: self.volumeValue)
+        }
     }
     
     func progressHeight(height: CGFloat) {
         self.progrssView.frame = CGRect(x: border, y: border, width: self.container.bounds.size.width - 2 * border, height: height)
         VolumeManager().changeVolume(self.volumeValue / denominator)
+    }
+    
+    func timerStart() {
+        self.timer.fireDate = Date.distantFuture
+    }
+    
+    func timerPause() {
+        self.timer.fireDate = Date.distantPast
     }
     
 }
