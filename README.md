@@ -2,3 +2,8 @@
 Mac 用量控制
 http://olnx7jkmx.bkt.clouddn.com/volumeControl
 ![](http://olnx7jkmx.bkt.clouddn.com/volumeControl)
+
+
+reddit 上的：
+
+![](http://olnx7jkmx.bkt.clouddn.com/volume)
