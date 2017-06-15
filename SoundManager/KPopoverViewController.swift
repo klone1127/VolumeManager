@@ -7,57 +7,65 @@
 //
 
 import Cocoa
-import AudioToolbox
+
+let border: CGFloat = 2.0
 
 class KPopoverViewController: NSViewController {
     
-    var sound: NSSound!
+    var progrssView: NSView!
+    var container: NSView!
+    
+    @IBOutlet weak var touchButton: NSButton!
+    var volumeValue: CGFloat = 50.0       // 默认值为当前音量
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
+        self.containerView()
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(progressViewChanges), userInfo: nil, repeats: true)
         
     }
     
     @IBAction func volumeChangedHandle(_ sender: Any) {
         print("volume changed")
-        self.changeVolume(0.6)
+        VolumeManager().changeVolume(0.2)
+        self.volumeValue = self.volumeValue + 1
+        self.progressHeight(height: self.volumeValue)
     }
     
-    func changeVolume(_ volumeValue: CGFloat = 0.5) {
-        // 获取输出设备
-        var defaultOutputDeviceID = AudioDeviceID(0)
-        var defaultOutputDeviceIDSize = UInt32(MemoryLayout.size(ofValue: defaultOutputDeviceID))
+    func containerView() {
         
-        var getDefaultOutputDevicePropertyAddress = AudioObjectPropertyAddress(
-            mSelector: AudioObjectPropertySelector(kAudioHardwarePropertyDefaultOutputDevice),
-            mScope: AudioObjectPropertyScope(kAudioObjectPropertyScopeGlobal),
-            mElement: AudioObjectPropertyElement(kAudioObjectPropertyElementMaster))
+        self.container = NSView()
+        container.wantsLayer = true
+        container.layer?.borderWidth = border // 添加 borderColor
+        self.view.addSubview(container)
         
-        _ = AudioObjectGetPropertyData(
-            AudioObjectID(kAudioObjectSystemObject),
-            &getDefaultOutputDevicePropertyAddress,
-            0,
-            nil,
-            &defaultOutputDeviceIDSize,
-            &defaultOutputDeviceID)
+        let w: CGFloat = 40.0
+        let h: CGFloat = 100.0
+        container.frame = NSRect(x: self.view.bounds.width / 2 - w / 2.0, y: self.view.bounds.size.height / 2.0 - h / 2.0, width: w, height: h)
         
-        // 设置音量
-        var volume = Float32(volumeValue) // 0.0 ... 1.0
-        let volumeSize = UInt32(MemoryLayout.size(ofValue: volume))
+        self.loadProgressView(superView: container)
         
-        var volumePropertyAddress = AudioObjectPropertyAddress(
-            mSelector: AudioObjectPropertySelector(kAudioHardwareServiceDeviceProperty_VirtualMasterVolume),
-            mScope: AudioObjectPropertyScope(kAudioDevicePropertyScopeOutput),
-            mElement: AudioObjectPropertyElement(kAudioObjectPropertyElementMaster))
+    }
+    
+    func loadProgressView(_ superViewBorder: CGFloat = 2.0, superView: NSView) {
+        // MARK: height 应该为当前的音量, 最大为 100
+        let h: CGFloat = 20.0
+        self.progrssView = NSView()
+        self.progressHeight(height: h)
+        self.progrssView.wantsLayer = true
+        self.progrssView.layer?.backgroundColor = NSColor.red.cgColor
+        superView.addSubview(self.progrssView)
         
-        _ = AudioObjectSetPropertyData(
-            defaultOutputDeviceID,
-            &volumePropertyAddress,
-            0,
-            nil,
-            volumeSize,
-            &volume)
+    }
+    
+    @objc func progressViewChanges() {
+        self.volumeValue = self.volumeValue - 1
+        self.progressHeight(height: self.volumeValue)
+    }
+    
+    func progressHeight(height: CGFloat) {
+        self.progrssView.frame = CGRect(x: border, y: border, width: self.container.bounds.size.width - 2 * border, height: height)
     }
     
 }

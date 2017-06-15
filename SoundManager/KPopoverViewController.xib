@@ -8,12 +8,13 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="KPopoverViewController" customModule="SoundManager" customModuleProvider="target">
             <connections>
+                <outlet property="touchButton" destination="BXU-iv-kNh" id="nFU-zo-WjQ"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customView identifier="KPopoverViewController" id="Hz6-mo-xeY">
+        <customView identifier="KPopoverViewController" wantsLayer="YES" id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>

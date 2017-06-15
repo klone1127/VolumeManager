@@ -11,11 +11,11 @@
 		7DEB629D1EF17CEA0026EBE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */; };
 		7DEB62AC1EF17CEA0026EBE9 /* SoundManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62AB1EF17CEA0026EBE9 /* SoundManagerTests.swift */; };
 		7DEB62B71EF17CEA0026EBE9 /* SoundManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62B61EF17CEA0026EBE9 /* SoundManagerUITests.swift */; };
-		7DEB62C51EF17D790026EBE9 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB62C41EF17D790026EBE9 /* iTunesArtwork.png */; };
 		7DEB62C81EF181920026EBE9 /* KPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62C61EF181920026EBE9 /* KPopoverViewController.swift */; };
 		7DEB62C91EF181920026EBE9 /* KPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */; };
 		7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62CA1EF1874D0026EBE9 /* main.swift */; };
 		7DEB62CC1EF18ED80026EBE9 /* KPopoverViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */; };
+		8B3122191EF236FC00E466D5 /* VolumeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3122181EF236FC00E466D5 /* VolumeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +47,11 @@
 		7DEB62B21EF17CEA0026EBE9 /* SoundManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DEB62B61EF17CEA0026EBE9 /* SoundManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManagerUITests.swift; sourceTree = "<group>"; };
 		7DEB62B81EF17CEA0026EBE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DEB62C41EF17D790026EBE9 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "../../../../Desktop/icon/apple-Icon/Assets/App Icon/iTunesArtwork.png"; sourceTree = "<group>"; };
 		7DEB62C61EF181920026EBE9 /* KPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPopoverViewController.swift; sourceTree = "<group>"; };
 		7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KPopoverViewController.xib; sourceTree = "<group>"; };
 		7DEB62CA1EF1874D0026EBE9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8B31215F1EF20CAD00E466D5 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		8B3122181EF236FC00E466D5 /* VolumeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 				7DEB62AA1EF17CEA0026EBE9 /* SoundManagerTests */,
 				7DEB62B51EF17CEA0026EBE9 /* SoundManagerUITests */,
 				7DEB62961EF17CEA0026EBE9 /* Products */,
+				E92A8E8022E9CECDE0B8C23A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,12 +105,13 @@
 			children = (
 				7DEB62981EF17CEA0026EBE9 /* AppDelegate.swift */,
 				7DEB629C1EF17CEA0026EBE9 /* Assets.xcassets */,
-				7DEB62C41EF17D790026EBE9 /* iTunesArtwork.png */,
 				7DEB62A11EF17CEA0026EBE9 /* Info.plist */,
+				8B31215F1EF20CAD00E466D5 /* iTunesArtwork.png */,
 				7DEB62A21EF17CEA0026EBE9 /* SoundManager.entitlements */,
 				7DEB62C61EF181920026EBE9 /* KPopoverViewController.swift */,
 				7DEB62C71EF181920026EBE9 /* KPopoverViewController.xib */,
 				7DEB62CA1EF1874D0026EBE9 /* main.swift */,
+				8B3122181EF236FC00E466D5 /* VolumeManager.swift */,
 			);
 			path = SoundManager;
 			sourceTree = "<group>";
@@ -129,6 +132,13 @@
 				7DEB62B81EF17CEA0026EBE9 /* Info.plist */,
 			);
 			path = SoundManagerUITests;
+			sourceTree = "<group>";
+		};
+		E92A8E8022E9CECDE0B8C23A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DEB62C91EF181920026EBE9 /* KPopoverViewController.xib in Resources */,
-				7DEB62C51EF17D790026EBE9 /* iTunesArtwork.png in Resources */,
 				7DEB629D1EF17CEA0026EBE9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +275,7 @@
 				7DEB62C81EF181920026EBE9 /* KPopoverViewController.swift in Sources */,
 				7DEB62CB1EF1874D0026EBE9 /* main.swift in Sources */,
 				7DEB62991EF17CEA0026EBE9 /* AppDelegate.swift in Sources */,
+				8B3122191EF236FC00E466D5 /* VolumeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
