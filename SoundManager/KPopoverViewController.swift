@@ -32,7 +32,7 @@ class KPopoverViewController: NSViewController {
                            selector: #selector(progressViewChanges),
                            userInfo: nil,
                            repeats: true)
-        RunLoop.current.add(self.timer, forMode: .commonModes)
+        RunLoop.current.add(self.timer, forMode: RunLoop.Mode.common)
         
     }
     
@@ -54,8 +54,8 @@ class KPopoverViewController: NSViewController {
             self.timerPause()
         }
     }
+    
     func containerView() {
-        
         self.container = NSView()
         container.wantsLayer = true
         container.layer?.borderWidth = border // 添加 borderColor
@@ -70,7 +70,6 @@ class KPopoverViewController: NSViewController {
     }
     
     func showVolumeValue(constraints: NSView) {
-        
         self.volumeText = NSTextField(labelWithString: "\(self.defaultVolume)")
         self.view.addSubview(self.volumeText)
         self.volumeText.isEditable = false
@@ -78,7 +77,6 @@ class KPopoverViewController: NSViewController {
         self.volumeText.font = NSFont.systemFont(ofSize: 10.0)
         self.volumeText.textColor = .white
         self.volumeText.backgroundColor = .black
-        
     }
     
     func loadProgressView(_ superViewBorder: CGFloat = 2.0, superView: NSView) {
@@ -96,7 +94,7 @@ class KPopoverViewController: NSViewController {
             self.volumeValue = self.volumeValue - 1
             self.progressHeight(height: self.volumeValue)
         }
-        self.volumeText.placeholderString = "\(self.volumeValue)"
+        self.volumeText.placeholderString = "\(self.volumeValue ?? 0.0)"
     }
     
     func progressHeight(height: CGFloat) {

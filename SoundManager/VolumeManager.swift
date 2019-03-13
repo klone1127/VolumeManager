@@ -12,7 +12,6 @@ import AudioToolbox
 class VolumeManager: NSObject {
     
     open func changeVolume(_ volumeValue: CGFloat = 0.5) {
-        
         // 设置音量
         var volume = Float32(volumeValue) // 0.0 ... 1.0
         let volumeSize = UInt32(MemoryLayout.size(ofValue: volume))

@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.popover = NSPopover()
         self.popover.behavior = .transient
         self.popover.appearance = NSAppearance.init(named: .vibrantLight)
-        self.popover.contentViewController = KPopoverViewController(nibName: NSNib.Name(rawValue: "KPopoverViewController"), bundle: nil)
+        self.popover.contentViewController = KPopoverViewController(nibName: "KPopoverViewController", bundle: nil)
     }
     
     @objc func showPopover(_ sender: NSButton) {
